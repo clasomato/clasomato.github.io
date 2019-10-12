@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Climo Stuidos</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="media/csico.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!--<body background="media/bg2.png">-->
+<body>
+  <div class="topnav" id="myTopnav">
+  		<a href="#" class="active">Home</a>
+      <a href="portfolio2.html">Portfolio</a>
+      <!--<a href="#">Shop</a>-->
+  		<a href="contact.html">Contact</a>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i>
+  		</a>
+	</div>
+
+	<script>
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function myFunction() {
+  			var x = document.getElementById("myTopnav");
+  		if (x.className === "topnav") {
+    		x.className += " responsive";
+  		} else {
+    	x.className = "topnav";
+  		}
+		}
+	</script>
+
+	<!--Heading Elements-->
+	<div class="indexContainer">
+		<!--<h1 class="ch1">Climo Studios</h1>-->
+		<img src="media/cslogo.png" class="cslogo">
+
+    <div class="slideshow">
+      <img class="mySlides" src="media/me1.png">
+      <img class="mySlides" src="media/dassi.png">
+      <img class="mySlides" src="media/wcLogin.png">
+      <img class="mySlides" src="media/sbwp.png">
+      <img class="mySlides" src="media/galaxy.png">
+
+      <script type="text/javascript">
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 3500); // Change image every 2 seconds
+      }
+      </script>
+      <button type="button" name="button" class="button" onclick="window.location.href = 'portfolio2.html';">Portfolio</button>
+    </div>
+
+
+	</div>
+
+	<!--The about us section-->
+	<div class="section1">
+		<img class="section1Img" src="media/profile1.png" width="400vw">
+		<div class="section1Text">
+			<h2>About us</h2>
+			<p>Climo Studios is a small comune of local designers in the Wellington area,
+        although we can do work worldwide. The aim for Climo Studios was first to
+        make a portfolio website for myself (Jason Climo) but then spread out to be
+        able to subcontract other designers that I know to strengthen the types of
+        design we can do and so far we can do: Web Design, Graphic Design: logos,
+        illustrations, analytics or any computer based graphics, Print based work
+        such as: magazines, posters, business cards, stickers, anything you want
+        that can be printed!
+         We now have an inhouse motion graphics designer which now opens
+        us up to small scale animations, and screen overlays.
+      </p>
+
+			<p>We aim to be an affordable solution for small companies, start up businesses
+         and individuals wanting our services. We want our customers to be as happy as
+         we are as this is our passion and we can't wait to be contracting for you :)</p>
+		</div>
+	</div>
+
+</body>
+
+
+
+
+
+
+<!--Footer-->
+<div class="footer">
+  <h4>Copyright: Climo Studios 2019 &copy;</h4>
+</div>
