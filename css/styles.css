@@ -52,6 +52,113 @@
 }
 
 
+
+.portfolioContainer2 {
+
+}
+
+.porth2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #eee;
+}
+
+.portImg2 {
+  width: 30%;
+  display: inline;
+  border-radius: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  box-shadow: 4px 10px 16px 1px rgba(33,33,33,.09);
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.come-in {
+  left: 100px;
+  animation: come-in 0.8s ease forwards;
+}
+.already-visible {
+  left: 0;
+  animation: none;
+}
+
+@keyframes come-in {
+  to { left: 0; }
+}
+
+.logoSection {
+  background-color: #317d91/*#701334*/;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.uxSection {
+  background-color: #701334;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.digitalartSection {
+  background-color: #317d91/*#701334*/;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.portImg2:hover {
+  box-shadow: 5px 11px 17px 2px rgba(33,33,33,.2);
+}
+
+@-webkit-keyframes scale-up-center {
+0% {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+100% {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+}
+@keyframes scale-up-center {
+0% {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+100% {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+}
+
+
+
+
+.projectContainer2 {
+  background-color: #317d91;
+  padding-top: 1%;
+  color: white;
+}
+
+.projectImg3 {
+  background-color: #701334;
+  width: 47%;
+  border-radius: 2%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.projectImgContainer2 {
+  background-color: #701334;
+  width: 100%;
+  padding-top: 2%;
+}
+
+
+
+
 /**Testing Area ENDS**/
 
 body {
@@ -90,13 +197,13 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  /*background-color: #ddd;
+  color: black;*/
 }
 
 /* Add an active class to highlight the current page */
-.active {
-  background-color: #c21954;
+#active {
+  background-color: #701334;
   color: white;
 }
 
@@ -104,6 +211,37 @@ body {
 .topnav .icon {
   display: none;
 }
+
+/*UNDERLINE ANIMAITON*/
+.nava {
+ color: #fff;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;  display: inline-block;
+ padding: 15px 20px;
+ position: relative;
+}
+.nava:after {
+ background: none repeat scroll 0 0 transparent;
+ bottom: 0;
+ content: "";
+ display: block;
+ height: 2px;
+ left: 50%;
+ position: absolute;
+ background: #fff;
+ transition: width 0.3s ease 0s, left 0.3s ease 0s;
+ width: 0;
+}
+.nava:hover:after {
+ width: 100%;
+ left: 0;
+}
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -197,8 +335,8 @@ body {
 	}
 }
 
-.button {
-  background-color: #c21954;
+/*.button {
+  background-color: #701334;
   border: none;
   border-radius: %;
   color: white;
@@ -213,7 +351,7 @@ body {
 .button:hover {
   background-color: #317d91;
   color: white;
-}
+}*/
 /**LANDING PAGE ENDS**/
 
 
@@ -308,8 +446,13 @@ body {
   max-width: 90%;
   border-radius: 2%;
   margin-bottom: 15%;
+  box-shadow: 4px 10px 16px 1px rgba(33,33,33,.09);
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.portImg:hover {
+  box-shadow: 5px 11px 17px 2px rgba(33,33,33,.2);
 }
 
 @-webkit-keyframes scale-up-center {
@@ -353,21 +496,24 @@ body {
 }
 
 .projecth1 {
-  color: #262626;
+  /*color: #262626;*/
+  color: white;
   font-size: 250%;
   margin-left: 1.8%;
-  font-family: 'Bevan', cursive;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: -2%;
   padding-bottom: 0.5em;
 }
 
 .projecth2 {
-  color: #333;
+  /*color: #333;*/
+  color: white;
   margin-left: 2%;
 }
 
 .projecth3 {
-  color: #333;
+  /*color: #333;*/
+  color: white;
   margin-left: 2%;
 }
 
@@ -397,8 +543,10 @@ body {
 
 .projectDescription {
   width: 40%;
-  color: #333;
+  /*color: #333;*/
+  color: white;
   margin-left: 2%;
+  padding-bottom: 5%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -424,12 +572,13 @@ body {
 .contacth1 {
   color: #262626;
   font-size: 250%;
-  font-family: 'Bevan', cursive;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: -2%;
 }
 
 .contacth2 {
   line-height: 0.8em;
+  margin-left: 1%;
 }
 
 .contactPoint {
@@ -439,6 +588,7 @@ body {
 
 .contactP {
   width: 60%;
+  margin-left: 1%;
 }
 
 @media only screen and (max-width: 600px) {
