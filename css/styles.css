@@ -88,21 +88,21 @@
 }
 
 .logoSection {
-  background-color: #317d91/*#701334*/;
-  padding-left: 5%;
-  padding-top: 1%;
-  padding-bottom: 2%;
-}
-
-.uxSection {
   background-color: #701334;
   padding-left: 5%;
   padding-top: 1%;
   padding-bottom: 2%;
 }
 
+.uxSection {
+  background-color: #317d91;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
 .digitalartSection {
-  background-color: #317d91/*#701334*/;
+  background-color: #701334;
   padding-left: 5%;
   padding-top: 1%;
   padding-bottom: 2%;
@@ -335,26 +335,6 @@ body {
 	}
 }
 
-/*.button {
-  background-color: #701334;
-  border: none;
-  border-radius: %;
-  color: white;
-  padding: 15px 28px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 2%;
-}
-
-.button:hover {
-  background-color: #317d91;
-  color: white;
-}*/
-/**LANDING PAGE ENDS**/
-
-
 
 /**This is the first section**/
 .section1 {
@@ -562,33 +542,38 @@ body {
 
 /**Contact Page**/
 .contactText {
-  padding: 5%;
+  /*padding: 5%;*/
   float: left;
-  width: 45%;
+  width: 50%;
   padding-right: 10%;
-  color: #333333;
+  color: #e8e8e8;
+  background-color: #701334;
+  height: 100vh;
 }
 
 .contacth1 {
-  color: #262626;
+  color: white;
   font-size: 250%;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: -2%;
+  padding-left: 5%;
 }
 
 .contacth2 {
   line-height: 0.8em;
   margin-left: 1%;
+  padding-left: 5%;
 }
 
 .contactPoint {
-  color: #474747;
+  color: #c9c9c9;
   font-size: 90%;
 }
 
 .contactP {
   width: 60%;
   margin-left: 1%;
+  padding-left: 5%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -603,11 +588,22 @@ body {
 }
 
 .contactImg {
-  width: 30%;
+  /*width: 30%;
   float: left;
   margin-right: 5%;
   margin-top: 5%;
+  border-radius: 5%;*/
+  width: 80%;
   border-radius: 5%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.contactImgcontainer {
+  height: 100vh;
+  background-color: #317d91/*#701334*/;
+  width: 40%;
+  float: right;
 }
 
 @media only screen and (max-width: 600px) {
