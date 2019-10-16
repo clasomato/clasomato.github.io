@@ -53,7 +53,7 @@
 
 
 
-.portfolioContainer2 {
+/*.portfolioContainer2 {
 
 }
 
@@ -61,6 +61,13 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 3em;
     color: #eee;
+}
+
+@media only screen and (max-width: 600px) {
+  .porth2 {
+    width: 80%;
+    margin-left: 7%;
+  }
 }
 
 .portImg2 {
@@ -72,6 +79,14 @@
   box-shadow: 4px 10px 16px 1px rgba(33,33,33,.09);
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@media only screen and (max-width: 600px) {
+  .portImg2 {
+    width: 80%;
+    margin-bottom: 11%;
+    margin-left: 7%;
+  }
 }
 
 .come-in {
@@ -131,32 +146,54 @@
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+}*/
+
+
+/* Form For cotact page */
+.contactForm {
+  margin-left: 5%;
+  width: 20%;
 }
 
+input[type=text] {
+  width: 80%;
+  padding: 2%;
+  font-size: 1.5em;
+  box-sizing: border-box;
+  /*background-color: #317d91;
+  color: white;*/
+  outline: none;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
 
+input[type=text]:focus {
+  width: 100%;
+}
 
+legend {
+  font-size: 2em;
+  border: 0px;
+}
 
-.projectContainer2 {
-  background-color: #317d91;
-  padding-top: 1%;
+fieldset {
+  /*border: 4px solid #317d91;*/
+  border-radius: 1em;
+  border: none;
+  padding: 5%;
   color: white;
 }
 
-.projectImg3 {
-  background-color: #701334;
-  width: 47%;
-  border-radius: 2%;
-  margin-left: 2%;
-  margin-bottom: 2%;
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #317d91;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5%;
 }
-
-.projectImgContainer2 {
-  background-color: #701334;
-  width: 100%;
-  padding-top: 2%;
-}
-
-
 
 
 /**Testing Area ENDS**/
@@ -166,13 +203,8 @@ body {
 	margin: 0;
 	background-color: #e3e3e3;
 	font-family: 'Noto Sans', sans-serif;
-  /*font-family: 'Montserrat', sans-serif;*/
-
-	background-position: right;
-  background-repeat: no-repeat;
- 	background-size: cover;
- 	position: relative;
 }
+
 
 
 
@@ -193,12 +225,6 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  /*background-color: #ddd;
-  color: black;*/
 }
 
 /* Add an active class to highlight the current page */
@@ -271,6 +297,7 @@ body {
 
 
 
+
 /**This is where the landing start**/
 .indexContainer {
 	font-family: 'Montserrat', sans-serif;
@@ -289,6 +316,7 @@ body {
 	width: 50vw;
   margin-left: 2%;
 }
+
 @media only screen and (max-width: 600px) {
   .cslogo {
     width: 90%;
@@ -338,11 +366,9 @@ body {
 
 /**This is the first section**/
 .section1 {
-	/**width: 80vw;**/
 	padding-left: 14vw;
 	padding-right: 14vw;
 	background-color: #317d91;
-	/**height: 50vh;**/
 	color: white;
 
 }
@@ -381,87 +407,104 @@ body {
 
 
 
+
 /**PORTFOLIO STARTS HERE**/
-.portfolioContainer {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 8%;
-  background-color: red;
-  height: 100%;
-}
-@media only screen and (max-width: 600px) {
-  .portfolioContainer {
-    width: 98%;
-    margin-left: 1%;
-    margin-right: 1%;
-  }
+
+
+
+.portfolioContainer2 {
+
 }
 
-.row1 {
-  max-width: 48%;
-  text-align: center;
-  float: left;
+.porth2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #eee;
 }
 
 @media only screen and (max-width: 600px) {
-  .row1 {
-    max-width: 50%;
+  .porth2 {
+    width: 80%;
+    margin-left: 7%;
   }
 }
 
-.row2 {
-  float: right;
-  max-width: 48%;
-  text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-  .row2 {
-    max-width: 50%;
-  }
-}
-
-.portImg {
-  max-width: 90%;
+.portImg2 {
+  width: 30%;
+  display: inline;
   border-radius: 2%;
-  margin-bottom: 15%;
+  margin-bottom: 2%;
+  margin-right: 2%;
   box-shadow: 4px 10px 16px 1px rgba(33,33,33,.09);
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.portImg:hover {
+@media only screen and (max-width: 600px) {
+  .portImg2 {
+    width: 80%;
+    margin-bottom: 11%;
+    margin-left: 7%;
+  }
+}
+
+.come-in {
+  left: 100px;
+  animation: come-in 0.8s ease forwards;
+}
+.already-visible {
+  left: 0;
+  animation: none;
+}
+
+@keyframes come-in {
+  to { left: 0; }
+}
+
+.logoSection {
+  background-color: #701334;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.uxSection {
+  background-color: #317d91;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.digitalartSection {
+  background-color: #701334;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.portImg2:hover {
   box-shadow: 5px 11px 17px 2px rgba(33,33,33,.2);
 }
 
 @-webkit-keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+0% {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+100% {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 }
 @keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+0% {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
-
-
-
-@media only screen and (max-width: 600px) {
-  .portImg {
-    margin-bottom: 5%;
-  }
+100% {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 }
 /**PORTFOLIO ENDS**/
 
@@ -469,69 +512,80 @@ body {
 
 
 /**Projects Universal Code**/
-.projectContainer {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-}
-
 .projecth1 {
   /*color: #262626;*/
   color: white;
   font-size: 250%;
-  margin-left: 1.8%;
+  margin-left: 9.8%;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: -2%;
   padding-bottom: 0.5em;
 }
 
 .projecth2 {
-  /*color: #333;*/
   color: white;
-  margin-left: 2%;
+  margin-left: 10%;
 }
 
 .projecth3 {
-  /*color: #333;*/
   color: white;
-  margin-left: 2%;
+  margin-left: 10%;
 }
 
 .projecth2, .projecth3 {
-  line-height: 0.8em;
-}
-
-
-.projectImgContainer {
-
-}
-
-.projectImg2 {
-  width: 47%;
-  border-radius: 2%;
-  margin-left: 2%;
-  margin-bottom: 2%;
+  line-height: 0.9em;
 }
 
 @media only screen and (max-width: 600px) {
-  .projectImg2 {
-    width: 100%;
-    margin-bottom: 5%;
-    margin-left: 0%;
+  .projecth2, .projecth3 {
+    width: 80%;
+    line-height: 1.4em;
   }
 }
 
+.projectContainer2 {
+  background-color: #317d91;
+  padding-top: 1%;
+  color: white;
+}
+
+.projectImg3 {
+  background-color: #701334;
+  width: 36%;
+  border-radius: 2%;
+  margin-left: 9%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  box-shadow: 4px 10px 16px 1px rgba(33,33,33,.09);
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@media only screen and (max-width: 600px) {
+  .projectImg3 {
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+  }
+}
+
+.projectImgContainer2 {
+  background-color: #701334;
+  width: 100%;
+  padding-top: 2%;
+}
+
+
 .projectDescription {
   width: 40%;
-  /*color: #333;*/
   color: white;
-  margin-left: 2%;
+  margin-left: 10%;
   padding-bottom: 5%;
 }
 
 @media only screen and (max-width: 600px) {
   .projectDescription {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -544,19 +598,21 @@ body {
 .contactText {
   /*padding: 5%;*/
   float: left;
-  width: 50%;
+  width: 100%;
   padding-right: 10%;
+  padding-top: 3%;
   color: #e8e8e8;
   background-color: #701334;
   height: 100vh;
+  padding-bottom: 10%
 }
 
 .contacth1 {
   color: white;
   font-size: 250%;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: -2%;
-  padding-left: 5%;
+  margin-bottom: -1%;
+  padding-left: 5.5%;
 }
 
 .contacth2 {
@@ -578,38 +634,14 @@ body {
 
 @media only screen and (max-width: 600px) {
   .contactText {
-    width: 90%;
-    padding-right: 0%;
+    width: 100%;
+    padding-right: 10%;
+    margin-bottom: 0%;
+    padding-bottom: 4%;
   }
 
   .contactP {
     width: 90%;
-  }
-}
-
-.contactImg {
-  /*width: 30%;
-  float: left;
-  margin-right: 5%;
-  margin-top: 5%;
-  border-radius: 5%;*/
-  width: 80%;
-  border-radius: 5%;
-  margin-left: 10%;
-  margin-top: 10%;
-}
-
-.contactImgcontainer {
-  height: 100vh;
-  background-color: #317d91/*#701334*/;
-  width: 40%;
-  float: right;
-}
-
-@media only screen and (max-width: 600px) {
-  .contactImg {
-    width: 90%;
-    margin-left: 5%;
   }
 }
 /**CONTACT PAGE ENDS**/
@@ -621,5 +653,20 @@ body {
   background-color: #333;
   color: white;
   padding: 2%;
+  height: 4em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footerh4 {
+  float: left;
+}
+
+.footerLinks {
+  float: right;
+}
+
+.footerImg {
+  width: 50%;
 }
 /**Footer ENDS**/
