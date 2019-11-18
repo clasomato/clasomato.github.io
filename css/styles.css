@@ -260,6 +260,10 @@ body {
 	animation-duration: 0.3s;
 }
 
+.mySlides:hover {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   .mySlides {
     width: 90vw;
@@ -354,6 +358,10 @@ body {
   box-shadow: 4px 10px 16px 1px rgba(33,33,33,.09);
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.portImg2:hover {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
