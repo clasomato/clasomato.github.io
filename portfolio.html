@@ -32,12 +32,12 @@
       <!-- <img src="media/me1.png" @click="openModal()" alt="Mother Earth Project Image" class="portImg2" title="Mother Earth Logo" id="motherTrigger"> -->
       <img src="media/dassi.png" @click="openModal($event)" alt="Dassi Project" class="portImg2" title="Dassi Logo" id="dassiTrigger">
 
-      <img src="media/purpleE.png" alt="Purple Elephant Project Image" class="portImg2" title="Pueple Elephant Logo" id="purpleTrigger">
+      <img src="media/purpleE.png" @click="openModal($event)" alt="Purple Elephant Project Image" class="portImg2" title="Pueple Elephant Logo" id="purpleTrigger">
     </div>
 
     <div class="uxSection">
       <h2 class="porth2">Web & UX Design</h2>
-      <img src="media/wcLogin.png" alt="Wellington Canvas Project" class="portImg2" title="Wellington Campus App" id="wcTrigger">
+      <img src="media/wcLogin.png" @click="openModal($event)" alt="Wellington Canvas Project" class="portImg2" title="Wellington Campus App" id="wcTrigger">
     </div>
 
     <div class="digitalartSection">
@@ -94,7 +94,7 @@
 
 
   <!-- Purple Elepant overlay -->
-  <div class="overlay" id="overlay3">
+  <div class="overlay" id="overlay-purpleTrigger" @click="closeModal($event)">
     <div class="projectContainer2">
       <h1 class="projecth1">Purple Elephant Logo</h1>
       <h2 class="projecth2">Jason Climo</h2>
@@ -112,7 +112,7 @@
 
 
   <!-- Wellington Canvas Overlay -->
-  <div class="overlay" id="overlay4">
+  <div class="overlay" id="overlay-wcTrigger" @click="closeModal($event)">
     <div class="projectContainer2">
       <h1 class="projecth1">Wellington Canvas</h1>
       <h2 class="projecth2">Jason Climo, Ben Elwood, Jess</h2>
@@ -134,7 +134,7 @@
 
 
   <!-- Galaxy Overaly -->
-  <div class="overlay" id="overlay5">
+  <div class="overlay" id="overlay5" @click="closeModal($event)">
     <div class="projectContainer2">
       <h1 class="projecth1">Galaxy</h1>
       <h2 class="projecth2">Jason Climo</h2>
@@ -145,7 +145,7 @@
       it turned out quite clean and put me into a groovy mood when I looked at it.
       Now it is on my wall.</p>
 
-      <div class="projectImgContainer2">
+      <div class="projectImgContainer2" @click="closeModal($event)">
         <img src="media/galaxy.png" alt="Wellington Canvas Login Page" class="projectImg3">
       </div>
     </div>
@@ -185,68 +185,16 @@
       }
     })
 
-    // Overlay for the sideshow
-    // $("#overlay1").hide(0);
-    //   $("#motherTrigger").click(function(){
-    //   $("#overlay1").fadeIn(600);
-    // });
-
-    // $("#overlay1").click(function(){
-    //   $(this).fadeOut(200);
-    // });
-
-
-    // $("#overlay2").hide(0);
-    //   $("#dassiTrigger").click(function(){
-    //   $("#overlay2").fadeIn(600);
-    // });
-
-    // $("#overlay2").click(function(){
-    //   $(this).fadeOut(200);
-    // });
-
-
-    // $("#overlay3").hide(0);
-    //   $("#purpleTrigger").click(function(){
-    //   $("#overlay3").fadeIn(600);
-    // });
-
-    // $("#overlay3").click(function(){
-    //   $(this).fadeOut(200);
-    // });
-
-
-    // $("#overlay4").hide(0);
-    //   $("#wcTrigger").click(function(){
-    //   $("#overlay4").fadeIn(600);
-    // });
-
-    // $("#overlay4").click(function(){
-    //   $(this).fadeOut(200);
-    // });
-
-
-    // $("#overlay5").hide(0);
-    //   $("#galaxyTrigger").click(function(){
-    //   $("#overlay5").fadeIn(600);
-    // });
-
-    // $("#overlay5").click(function(){
-    //   $(this).fadeOut(200);
-    // });
-  </script>
-
-<script>
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-  function myFunction() {
-      var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-    x.className = "topnav";
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+      x.className = "topnav";
+      }
     }
-  }
-</script>
+  </script>
 
 
 
