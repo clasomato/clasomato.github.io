@@ -329,7 +329,15 @@ body {
 
 
 /**PORTFOLIO STARTS HERE**/
-
+.button {
+  text-decoration: none;
+  color: white;
+  background-color: #317d91;
+  font-size: 1.4em;
+  padding: 1% 2%;
+  border-radius: 0.5em;
+  margin: 2% 10%;
+}
 
 
 .portfolioContainer2 {
