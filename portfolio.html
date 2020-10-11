@@ -12,6 +12,8 @@
 </head>
 
 <body>
+  <!-- App Starts -->
+  <div id="app">
   <div class="topnav" id="myTopnav">
   		<a href="index.html" class="nava">Home</a>
       <a href="portfolio.html" id="active" class="nava">Portfolio</a>
@@ -22,25 +24,13 @@
   		</a>
 	</div>
 
-	<script>
-		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-		function myFunction() {
-  			var x = document.getElementById("myTopnav");
-  		if (x.className === "topnav") {
-    		x.className += " responsive";
-  		} else {
-    	x.className = "topnav";
-  		}
-		}
-  </script>
-
 
   <div class="portfolioContainer2">
     <div class="logoSection">
       <h2 class="porth2">Logos</h2>
-      <img src="media/me1.png" alt="Mother Earth Project Image" class="portImg2" title="Mother Earth Logo" id="motherTrigger">
-
-      <img src="media/dassi.png" alt="Dassi Project" class="portImg2" title="Dassi Logo" id="dassiTrigger">
+      <img src="media/me1.png" @click="openModal($event)" alt="Mother Earth Project Image" class="portImg2" title="Mother Earth Logo" id="motherTrigger">
+      <!-- <img src="media/me1.png" @click="openModal()" alt="Mother Earth Project Image" class="portImg2" title="Mother Earth Logo" id="motherTrigger"> -->
+      <img src="media/dassi.png" @click="openModal($event)" alt="Dassi Project" class="portImg2" title="Dassi Logo" id="dassiTrigger">
 
       <img src="media/purpleE.png" alt="Purple Elephant Project Image" class="portImg2" title="Pueple Elephant Logo" id="purpleTrigger">
     </div>
@@ -66,7 +56,7 @@
 
   <!-- The overlays for the portfolio items -->
   <!-- Mother earth overlay -->
-  <div class="overlay" id="overlay1">
+  <div class="overlay" @click="closeModal($event)" id="overlay-motherTrigger">
     <div class="projectContainer2">
       <h1 class="projecth1">Mother Earth Logo Redesign</h1>
       <h2 class="projecth2">Jason Climo</h2>
@@ -86,7 +76,7 @@
 
 
   <!-- Dassi Overlay -->
-  <div class="overlay" id="overlay2">
+  <div class="overlay" id="overlay-dassiTrigger" @click="closeModal($event)">
     <div class="projectContainer2">
       <h1 class="projecth1">Da$$i Logo</h1>
       <h2 class="projecth2">Jason Climo</h2>
@@ -163,68 +153,100 @@
 
   <!--Footer-->
   <div class="footer">
-    <h4 class="footerh4">Copyright: Climo Studios 2020 &copy;</h4>
+    <h4 class="footerh4">Copyright: Climo Studios {{ currentYear }} &copy;</h4>
     <div class="footerLinks">
       <a href="https://www.instagram.com/climo_studios/?hl=en" target="_blank"><img src="icons/instagram.png" alt="The logo of instagram" title="Link to instagram" class="footerImg"></a>
     </div>
   </div>
 
-
-
+  <!-- Ends App  -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        currentYear: false
+      },
+      methods: {
+        openModal: function (e) {
+          var modalToOpen = e.target.id
+          $('#overlay-' + modalToOpen).show(100)
+        },
+        closeModal: function (e) {
+          var modalToClose = e.target.id
+          $('#'+modalToClose).hide(100)
+        }
+      },
+      mounted: function () {
+        var d = new Date();
+        this.currentYear = d.getFullYear()
+      }
+    })
+
     // Overlay for the sideshow
-    $("#overlay1").hide(0);
-      $("#motherTrigger").click(function(){
-      $("#overlay1").fadeIn(600);
-    });
+    // $("#overlay1").hide(0);
+    //   $("#motherTrigger").click(function(){
+    //   $("#overlay1").fadeIn(600);
+    // });
 
-    $("#overlay1").click(function(){
-      $(this).fadeOut(200);
-    });
-
-
-    $("#overlay2").hide(0);
-      $("#dassiTrigger").click(function(){
-      $("#overlay2").fadeIn(600);
-    });
-
-    $("#overlay2").click(function(){
-      $(this).fadeOut(200);
-    });
+    // $("#overlay1").click(function(){
+    //   $(this).fadeOut(200);
+    // });
 
 
-    $("#overlay3").hide(0);
-      $("#purpleTrigger").click(function(){
-      $("#overlay3").fadeIn(600);
-    });
+    // $("#overlay2").hide(0);
+    //   $("#dassiTrigger").click(function(){
+    //   $("#overlay2").fadeIn(600);
+    // });
 
-    $("#overlay3").click(function(){
-      $(this).fadeOut(200);
-    });
-
-
-    $("#overlay4").hide(0);
-      $("#wcTrigger").click(function(){
-      $("#overlay4").fadeIn(600);
-    });
-
-    $("#overlay4").click(function(){
-      $(this).fadeOut(200);
-    });
+    // $("#overlay2").click(function(){
+    //   $(this).fadeOut(200);
+    // });
 
 
-    $("#overlay5").hide(0);
-      $("#galaxyTrigger").click(function(){
-      $("#overlay5").fadeIn(600);
-    });
+    // $("#overlay3").hide(0);
+    //   $("#purpleTrigger").click(function(){
+    //   $("#overlay3").fadeIn(600);
+    // });
 
-    $("#overlay5").click(function(){
-      $(this).fadeOut(200);
-    });
+    // $("#overlay3").click(function(){
+    //   $(this).fadeOut(200);
+    // });
+
+
+    // $("#overlay4").hide(0);
+    //   $("#wcTrigger").click(function(){
+    //   $("#overlay4").fadeIn(600);
+    // });
+
+    // $("#overlay4").click(function(){
+    //   $(this).fadeOut(200);
+    // });
+
+
+    // $("#overlay5").hide(0);
+    //   $("#galaxyTrigger").click(function(){
+    //   $("#overlay5").fadeIn(600);
+    // });
+
+    // $("#overlay5").click(function(){
+    //   $(this).fadeOut(200);
+    // });
   </script>
 
-
+<script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+    x.className = "topnav";
+    }
+  }
+</script>
 
 
 
