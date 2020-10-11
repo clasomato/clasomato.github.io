@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="media/csico.png" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
 
       <img src="media/sbwp.png" alt="Suicide Boys Project" class="portImg2" title="Suicide Boys Wallpaper">
 
-      <img src="media/galaxy.png" alt="Galaxy Digital Painting Project" class="portImg2" title="Galaxy Digital Art" id="galaxyTrigger">
+      <img src="media/galaxy.png" alt="Galaxy Digital Painting Project" class="portImg2" title="Galaxy Digital Art" id="galaxyTrigger" @click="openModal($event)">
 
     </div>
   </div>
@@ -56,8 +56,9 @@
 
   <!-- The overlays for the portfolio items -->
   <!-- Mother earth overlay -->
-  <div class="overlay" @click="closeModal($event)" id="overlay-motherTrigger">
+  <div class="overlay" id="overlay-motherTrigger">
     <div class="projectContainer2">
+      <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color: white;"><i class="fas fa-times"></i></a>
       <h1 class="projecth1">Mother Earth Logo Redesign</h1>
       <h2 class="projecth2">Jason Climo</h2>
       <h3 class="projecth3">Software Used: Adobe Illustrator</h3>
@@ -76,7 +77,8 @@
 
 
   <!-- Dassi Overlay -->
-  <div class="overlay" id="overlay-dassiTrigger" @click="closeModal($event)">
+  <div class="overlay" id="overlay-dassiTrigger">
+    <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color:white;"><i class="fas fa-times"></i></a>
     <div class="projectContainer2">
       <h1 class="projecth1">Da$$i Logo</h1>
       <h2 class="projecth2">Jason Climo</h2>
@@ -94,7 +96,8 @@
 
 
   <!-- Purple Elepant overlay -->
-  <div class="overlay" id="overlay-purpleTrigger" @click="closeModal($event)">
+  <div class="overlay" id="overlay-purpleTrigger">
+    <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color:white;"><i class="fas fa-times"></i></a>
     <div class="projectContainer2">
       <h1 class="projecth1">Purple Elephant Logo</h1>
       <h2 class="projecth2">Jason Climo</h2>
@@ -112,7 +115,8 @@
 
 
   <!-- Wellington Canvas Overlay -->
-  <div class="overlay" id="overlay-wcTrigger" @click="closeModal($event)">
+  <div class="overlay" id="overlay-wcTrigger">
+    <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color:white;"><i class="fas fa-times"></i></a>
     <div class="projectContainer2">
       <h1 class="projecth1">Wellington Canvas</h1>
       <h2 class="projecth2">Jason Climo, Ben Elwood, Jess</h2>
@@ -134,7 +138,8 @@
 
 
   <!-- Galaxy Overaly -->
-  <div class="overlay" id="overlay5" @click="closeModal($event)">
+  <div class="overlay" id="overlay-galaxyTrigger">
+    <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color:white;"><i class="fas fa-times"></i></a>
     <div class="projectContainer2">
       <h1 class="projecth1">Galaxy</h1>
       <h2 class="projecth2">Jason Climo</h2>
@@ -175,7 +180,7 @@
           $('#overlay-' + modalToOpen).show(100)
         },
         closeModal: function (e) {
-          var modalToClose = e.target.id
+          var modalToClose = e.target.offsetParent.offsetParent.id
           $('#'+modalToClose).hide(100)
         }
       },
