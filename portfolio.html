@@ -25,7 +25,7 @@
 	</div>
 
 
-  <div class="portfolioContainer2">
+  <div class="portfolioContainer2" id="thumbnails">
     <div class="logoSection">
       <h2 class="porth2">Logos</h2>
       <img src="media/me1.png" @click="openModal($event)" alt="Mother Earth Project Image" class="portImg2" title="Mother Earth Logo" id="motherTrigger">
@@ -151,17 +151,13 @@
         <p class="projectDescription">Cafe Villa was a two month project done in 2019 for a cafe in Ngaio. The brief was to have a nice fully custom site for the client to be able to post job opertunitys as well as having a menu that could be updated and a feature called quote of the day which was a sort of bullitin board.</p>
   
         <div class="projectImgContainer2">
-          <!-- <img src="media/wcLogin.png" alt="Wellington Canvas Login Page" class="projectImg3">
-          <img src="media/wcEvents.png" alt="Wellington Canvas Events Page" class="projectImg3">
-          <img src="media/wcMap.png" alt="Wellinton Canvas Map Page" class="projectImg3">
-          <img src="media/wcSettings.png" alt="Wellinton Canvas Events Page" class="projectImg3"> -->
           <a href="http://www.cafevilla.co.nz" target="_BLANK" class="button">Visit Website</a>
           <!-- <iframe src="cafevilla.co.nz" frameborder="0" width="90%" style="padding:5%" height="800px"></iframe> -->
         </div>
       </div>
     </div>
 
-      <!-- Cafe Villa Overlay -->
+      <!-- Jubatus Deliverance Ministry Overlay -->
       <div class="overlay" id="overlay-deliverance">
         <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color:white;"><i class="fas fa-times"></i></a>
         <div class="projectContainer2">
@@ -172,10 +168,6 @@
           <p class="projectDescription">Cafe Villa was a two month project done in 2019 for a cafe in Ngaio. The brief was to have a nice fully custom site for the client to be able to post job opertunitys as well as having a menu that could be updated and a feature called quote of the day which was a sort of bullitin board.</p>
     
           <div class="projectImgContainer2">
-            <!-- <img src="media/wcLogin.png" alt="Wellington Canvas Login Page" class="projectImg3">
-            <img src="media/wcEvents.png" alt="Wellington Canvas Events Page" class="projectImg3">
-            <img src="media/wcMap.png" alt="Wellinton Canvas Map Page" class="projectImg3">
-            <img src="media/wcSettings.png" alt="Wellinton Canvas Events Page" class="projectImg3"> -->
             <a href="https://jubatusdeliverance.co.nz/" target="_BLANK" class="button">Visit Website</a>
             <iframe src="https://jubatusdeliverance.co.nz/" frameborder="0" width="90%" style="padding:5%" height="800px"></iframe>
           </div>
@@ -224,10 +216,15 @@
         openModal: function (e) {
           var modalToOpen = e.target.id
           $('#overlay-' + modalToOpen).show(100)
+          document.getElementById("thumbnails").style.overflow = "hidden";
+          document.getElementById("thumbnails").style.height = "100vh";
         },
         closeModal: function (e) {
           var modalToClose = e.target.offsetParent.offsetParent.id
           $('#'+modalToClose).hide(100)
+
+          document.getElementById("thumbnails").style.overflow = "auto";
+          document.getElementById("thumbnails").style.height = "auto";
         }
       },
       mounted: function () {
