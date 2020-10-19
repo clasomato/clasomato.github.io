@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Climo Stuidos | Shop</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bevan&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="media/csico.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!--<body background="media/bg2.png">-->
+<body>
+  <!-- App Starts -->
+  <div id="app">
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="nava">Home</a>
+        <a href="portfolio.html" class="nava">Portfolio</a>
+        <a href="shop.html" class="nava" id="active">Shop</a>
+        <a href="contact.html" class="nava">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <!-- Shop STARTS  -->
+    <div class="shop-container">
+      <div class="outer-container">
+        <div class="inner-container">
+          <div class="card">
+            <h2 class="headingtwo">Basic Brochure Site</h2>
+            <h3>$600 - $800</h3>
+            <p class="card-text">
+              Mobile responsive <br>
+              Free Hosting <br>
+              Email support <br>
+              Maintanace $20/hour
+            </p>
+    
+            <a class="buttonEpic">Contact</a>
+          </div>
+    
+          <div class="card">
+            <h2 class="headingtwo">Full Stack Vue Application</h2>
+            <h3>$1000 - $1400</h3>
+            <p class="card-text">
+              Mobile responsive <br>
+              Hosting by customer choice <br>
+              Email & mobile support <br>
+              Maintanace $20/hour
+            </p>
+            <a class="buttonEpic alt">Enquire Now!</a>
+          </div>
+    
+          <div class="card">
+            <h2 class="headingtwo">Complete PHP Website</h2>
+            <h3>$2000 - $4000</h3>
+            <p class="card-text">
+              Mobile responsive <br>
+              Hosting by customer choice <br>
+              Email & mobile support <br>
+              Maintanace $10/hour
+            </p>
+            <a class="buttonEpic alt">Contact us</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="shop-desc">
+        <h1>Websites</h1>
+        <h2>Basic Brochure Site</h2>
+        <p>
+          A brochure site is a static site that has content that doesnt change unless the user asks the contractor to change. These changes can be made at
+          $15/hour. If the client choses to upgrade to a fluid website that can be aranged for a lower price. A static website is coded in <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
+          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a> and <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">javascript</a>, we also use the <a href="https://vuejs.org/" target="_blank">Vue CDN</a> for imersive interactions.
+          An example of a brochure site is climos
+        </p>
+      </div>
+
+      <div class="shop-images">
+
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <h4 class="footerh4">Copyright: Climo Studios {{currentYear}} &copy;</h4>
+      <div class="footerLinks">
+        <a href="https://www.instagram.com/climo_studios/?hl=en" target="_blank"><img src="icons/instagram.png" alt="The logo of instagram" title="Link to instagram" class="footerImg"></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+  var app = new Vue({
+  el: '#app',
+  data: {
+    currentYear: false
+  },
+  methods: {
+  },
+  mounted: function () {
+    var d = new Date();
+    this.currentYear = d.getFullYear()
+  }
+})
+
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+  x.className = "topnav";
+  }
+}
+</script>
