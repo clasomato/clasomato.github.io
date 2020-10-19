@@ -53,14 +53,14 @@
 
 
 /* Form For cotact page */
-.contactForm {
+/* .contactForm {
   margin-left: 5%;
   width: 20%;
-}
+} */
 
 input[type=text] {
-  width: 80%;
-  padding: 2%;
+  width: 50%;
+  padding: 1% 2%;
   font-size: 1.5em;
   box-sizing: border-box;
   /*background-color: #317d91;
@@ -68,14 +68,15 @@ input[type=text] {
   outline: none;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
+  margin-bottom: 1%;
 }
 
 input[type=text]:focus {
-  width: 100%;
+  width: 50%;
 }
 
 legend {
-  font-size: 2em;
+  font-size: 1.5em;
   border: 0px;
   color: white;
 }
@@ -97,6 +98,7 @@ input[type=button], input[type=submit], input[type=reset] {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5%;
+  font-size: 1.25em;
 }
 
 @media only screen and (max-width: 600px) /**Mobile Optimization**/ {
@@ -660,39 +662,50 @@ body {
 /**Contact Page**/
 .contactText {
   /*padding: 5%;*/
-  float: left;
+  /* float: left; */
   width: 100%;
   padding-right: 10%;
   padding-top: 3%;
   color: #e8e8e8;
   background-color: #701334;
   height: 100vh;
-  padding-bottom: 10%
+  padding-bottom: 10%;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .contacth1 {
   color: white;
   font-size: 250%;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: -1%;
-  padding-left: 5.5%;
+  /* margin-bottom: -1%; */
+  /* padding-left: 10%; */
 }
 
 .contacth2 {
-  line-height: 0.8em;
-  margin-left: 1%;
-  padding-left: 5%;
+  /* line-height: 0.8em; */
+  /* margin-left: 1%; */
+  /* padding-left: 5%; */
 }
 
 .contactPoint {
   color: #c9c9c9;
   font-size: 90%;
-}
+}s
 
 .contactP {
-  width: 60%;
-  margin-left: 1%;
-  padding-left: 5%;
+  /* width: 60%; */
+  /* margin-left: 1%; */
+  /* padding-left: 5%; */
+}
+
+.field {
+  text-align: center;
+  width: 100%;
+}
+
+.contactForm {
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
