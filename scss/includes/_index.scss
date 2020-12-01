@@ -1,0 +1,110 @@
+/**This is where the landing start**/
+.indexContainer {
+	font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) /**Mobile Optimization**/ {
+  .indexContainer {
+    height: 100vw + auto;
+  }
+}
+
+.cslogo {
+  margin-top: 5%;
+	width: 50vw;
+  margin-left: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+  .cslogo {
+    width: 90%;
+  }
+
+  .mySlides {
+    width: 90%;
+  }
+}
+
+.slideshow {
+  float: right;
+  border-radius: 8%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.mySlides {
+  width: 30vw;
+  border-radius: 8%;
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.3s;
+}
+
+.mySlides:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .mySlides {
+    width: 90vw;
+  }
+
+  .slideshow {
+    margin-left: 10%;
+  }
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/**This is the first section**/
+.section1 {
+	padding-left: 14vw;
+	padding-right: 14vw;
+	background-color: #317d91;
+	color: white;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .section1 {
+    padding-left: 8%;
+    padding-top: 4%;
+  }
+}
+
+.section1Img {
+	float: left;
+	padding: 1.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .section1Img {
+    width: 80vw;
+  }
+}
+
+.section1Text {
+	width: 45%;
+	padding: 10px;
+	margin-left: 45%;
+}
+
+@media only screen and (max-width: 600px) {
+  .section1Text {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+/**Index ENDS**/

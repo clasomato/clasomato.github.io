@@ -21,7 +21,24 @@
   		<a href="contact.html" class="nava">Contact</a>
   		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
     	<i class="fa fa-bars"></i>
-  		</a>
+      </a>
+      
+      <div class="socials">
+				<!-- Github -->
+				<a href="https://github.com/clasomato" target="_blank" class="social-single">
+					<i class="fab fa-github"></i> <p style="padding: 0%; margin: 0%;">Github</p>
+				</a>
+
+				<!-- Instagram -->
+				<a href="https://www.instagram.com/climo_studios/?hl=en" target="_blank" class="social-single">
+					<i class="fab fa-instagram"></i> <p style="padding: 0%; margin: 0%;">Instagram</p>
+				</a>
+
+				<!--Linked in-->
+				<a href="https://www.linkedin.com/in/jason-climo-096160201/" target="_blank" class="social-single">
+					<i class="fab fa-linkedin-in"></i> <p style="padding: 0%; margin: 0%;">LinkedIn</p>
+				</a>
+			</div>
 	</div>
 
 
@@ -39,9 +56,11 @@
       <h2 class="porth2">Web & UX Design</h2>
       <img src="media/wcLogin.png" @click="openModal($event)" alt="Wellington Canvas Project" class="portImg2" title="Wellington Campus App" id="wcTrigger">
 
-      <img src="media/cafe-villa-logo.svg" @click="openModal($event)" alt="Wellington Canvas Project" class="portImg2" title="Wellington Campus App" id="cafeVilla">
+      <img src="media/cafevilla.png" @click="openModal($event)" alt="Wellington Canvas Project" class="portImg2" title="Wellington Campus App" id="cafeVilla">
 
-      <img src="media/cafe-villa-logo.svg" @click="openModal($event)" alt="Wellington Canvas Project" class="portImg2" title="Wellington Campus App" id="deliverance">
+      <!-- <img src="media/cafe-villa-logo.svg" @click="openModal($event)" alt="Wellington Canvas Project" class="portImg2" title="Wellington Campus App" id="deliverance"> -->
+
+      <img src="media/quailco.png" @click="openModal($event)" alt="Wellington Canvas Project" class="portImg2" title="Wellington Campus App" id="quailco">
     </div>
 
     <div class="digitalartSection">
@@ -51,8 +70,13 @@
 
       <img src="media/sbwp.png" alt="Suicide Boys Project" class="portImg2" title="Suicide Boys Wallpaper">
 
-      <img src="media/galaxy.png" alt="Galaxy Digital Painting Project" class="portImg2" title="Galaxy Digital Art" id="galaxyTrigger" @click="openModal($event)">
+      <img src="media/galaxy.png" alt="Galaxy Digital Painting Project" class="portImg2" title="Galaxy Digital Art">
 
+      <img src="media/hahaokok.jpg" alt="Man inside Project" class="portImg2" title="Man Inside">
+
+      <img src="media/voodootwo.jpg" alt="Man inside Project" class="portImg2" title="Man Inside">
+
+      <img src="media/jacko.jpg" alt="Man inside Project" class="portImg2" title="Man Inside">
     </div>
   </div>
 
@@ -174,25 +198,36 @@
         </div>
       </div>
 
+      <!-- Quail Co Overlay -->
+      <div class="overlay" id="overlay-quailco">
+        <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color:white;"><i class="fas fa-times"></i></a>
+        <div class="projectContainer2">
+          
+          <div class="row">
+            <div class="col3">
+              <h1 class="projecth1">The Quail Co.</h1>
+              <h2 class="projecth2">Jason Climo</h2>
+              <a href="https://jubatusdeliverance.co.nz/" target="_BLANK" class="button">Visit Website</a>
+            </div>
 
-  <!-- Galaxy Overaly -->
-  <div class="overlay" id="overlay-galaxyTrigger">
-    <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color:white;"><i class="fas fa-times"></i></a>
-    <div class="projectContainer2">
-      <h1 class="projecth1">Galaxy</h1>
-      <h2 class="projecth2">Jason Climo</h2>
-      <h3 class="projecth3">Software Used: Adobe Photoshop</h3>
+            <div class="col3">
+              <h1>Tools used</h1>
+              <h3>HTML, CSS, Koala (SCSS Compiler), Wordpress</h3>
+            </div>
 
-      <p class="projectDescription">A digital painting done in Adobe Photoshop for
-      personal upskilling (basically self teaching). I ended up liking it a lot as
-      it turned out quite clean and put me into a groovy mood when I looked at it.
-      Now it is on my wall.</p>
+            <div class="col3">
+              <h1>About</h1>
+              <p>This was an interesting as it was a project that needed to be done in 24 hours for a meeting this client was going to so in the end I needed to sacrifice backend php with formsubmit.io and a good chunk of fancy design elements.</p>
+            </div>
+          </div>
 
-      <div class="projectImgContainer2" @click="closeModal($event)">
-        <img src="media/galaxy.png" alt="Wellington Canvas Login Page" class="projectImg3">
+          <div class="projectImgContainer2">
+            <img src="media/quailco1.jpeg" alt="Wellington Canvas Login Page" class="projectImg3">
+            <img src="media/quailco2.jpeg" alt="Wellington Canvas Login Page" class="projectImg3">
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+
 
   <!--Footer-->
   <div class="footer">

@@ -1,0 +1,198 @@
+@import 'includes/contact';
+@import 'includes/portfolio';
+@import 'includes/shop';
+@import 'includes/footer';
+@import 'includes/index';
+@import 'includes/nav';
+
+/**Testing Area**/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 48%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn {
+  background-color: #c21954;
+  border: none;
+  border-radius: 1%;
+  color: white;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 1%;
+  margin-top: 0.2%;
+}
+
+
+
+
+
+/**Testing Area ENDS**/
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #e3e3e3;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**Projects Universal Code**/
+.projecth1 {
+  /*color: #262626;*/
+  color: white;
+  font-size: 250%;
+  margin-left: 10%;
+  font-family: 'Montserrat', sans-serif;
+  // margin-bottom: -2%;
+  // padding-bottom: 0.5em;
+}
+
+.projecth2 {
+  color: white;
+  margin-left: 10%;
+}
+
+.projecth3 {
+  color: white;
+  margin-left: 10%;
+}
+
+.projecth2, .projecth3 {
+  line-height: 0.9em;
+}
+
+@media only screen and (max-width: 600px) {
+  .projecth2, .projecth3 {
+    width: 80%;
+    line-height: 1.4em;
+  }
+}
+
+.projectContainer2 {
+  /* background-color: #317d91; */
+  padding-top: 1%;
+  color: white;
+}
+
+.projectImg3 {
+  /* background-color: #701334; */
+  width: 36%;
+  border-radius: 2%;
+  margin-left: 9%;
+  margin-bottom: 1%;
+  margin-top: 5%;
+  box-shadow: 4px 10px 16px 1px rgba(33,33,33,.09);
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@media only screen and (max-width: 600px) {
+  .projectImg3 {
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+  }
+}
+
+.projectImgContainer2 {
+  /* background-color: #701334; */
+  width: 100%;
+}
+
+
+.projectDescription {
+  width: 40%;
+  color: white;
+  margin-left: 10%;
+}
+
+.row {
+  width: 100%;
+  overflow: auto;
+}
+
+.col3 {
+  width: 33%;
+  float: left;
+  padding: 2.5%;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .projectDescription {
+    width: 80%;
+  }
+
+  .col3 {
+    width: 100%;
+    // padding: 2% 10%;
+  }
+}
+
+/**PROJECTS UNIVERSAL CODE ENDS**/
+
+
+
+
+/*Overlay*/
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  overflow: scroll;
+}
