@@ -68,12 +68,37 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: #e3e3e3;
-	font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+}
 
+p, li {
+  font-size: 1.25em;
+}
 
+h1 {
+  font-size: 3em;
+}
 
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.75em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
 
 
 
@@ -88,30 +113,39 @@ body {
   /*color: #262626;*/
   color: white;
   font-size: 250%;
-  margin-left: 10%;
-  font-family: 'Montserrat', sans-serif;
+  // margin-left: 10%;
+  // font-family: 'Montserrat', sans-serif;
   // margin-bottom: -2%;
   // padding-bottom: 0.5em;
 }
 
 .projecth2 {
   color: white;
-  margin-left: 10%;
+  // margin-left: 10%;
 }
 
 .projecth3 {
   color: white;
-  margin-left: 10%;
+  // margin-left: 10%;
 }
 
 .projecth2, .projecth3 {
-  line-height: 0.9em;
+  // line-height: 0.9em;
 }
 
 @media only screen and (max-width: 600px) {
   .projecth2, .projecth3 {
     width: 80%;
     line-height: 1.4em;
+  }
+
+  .projecth1, .projecth2, .projecth3 {
+    margin: 0%;
+  }
+
+  .button {
+    margin: 5% 0% !important;
+    display: inline-block;
   }
 }
 
@@ -181,18 +215,4 @@ body {
 
 
 
-/*Overlay*/
-.overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.8); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-  overflow: scroll;
-}
+

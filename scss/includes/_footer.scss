@@ -2,9 +2,10 @@
   background-color: #333;
   color: white;
   padding: 2%;
-  height: 4em;
+  // height: 4em;
   padding-left: 10%;
   padding-right: 10%;
+  overflow: auto;
 }
 
 .footerh4 {
@@ -18,6 +19,26 @@
 .footerImg {
   width: 50%;
 }
+
+.social-footer {
+  width: 30%;
+  color: white;
+  font-size: 300%;
+}
+
+
+
+.sitemap {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 @media only screen and (max-width: 600px) /**Mobile Optimization**/ {
   .footer {
     padding-right: 5%;

@@ -55,7 +55,7 @@
     </div>
 
     <div class="logoSection">
-      <h2 class="porth2">Logos</h2>
+      <h2 class="porth2">Logos & Graphic Design Work</h2>
       <img src="media/me1.png" @click="openModal($event)" alt="Mother Earth Project Image" class="portImg2" title="Mother Earth Logo" id="motherTrigger">
       <!-- <img src="media/me1.png" @click="openModal()" alt="Mother Earth Project Image" class="portImg2" title="Mother Earth Logo" id="motherTrigger"> -->
       <img src="media/dassi.png" @click="openModal($event)" alt="Dassi Project" class="portImg2" title="Dassi Logo" id="dassiTrigger">
@@ -148,14 +148,32 @@
   <div class="overlay" id="overlay-wcTrigger">
     <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color:white;"><i class="fas fa-times"></i></a>
     <div class="projectContainer2">
-      <h1 class="projecth1">Wellington Canvas</h1>
-      <h2 class="projecth2">Jason Climo, Ben Elwood, Jess</h2>
-      <h3 class="projecth3">Software Used: Adobe Illustrator, InVision, Photoshop</h3>
 
-      <p class="projectDescription">Done as an assesment for Yoobee school of design
-      where we had to make a prototype ready mobile app for the Wellington City Council.
-      Overall this was an amazing way to learn teamwork and to make good use of everyones skills
-      and to create the final product as a group.</p>
+      
+
+      <div class="row">
+        <div class="col3">
+          <h1 class="projecth1">Wellington Canvas</h1>
+          <h2 class="projecth2">Jason Climo, Ben Elwood, Jess</h2>
+        </div>
+
+        <div class="col3">
+          <h1>Tools & Technology used</h1>
+          <ul>
+            <li>Adobe Illustrator</li>
+            <li>InVision</li>
+            <li>Photoshop</li>
+          </ul>
+        </div>
+
+        <div class="col3">
+          <h1>About</h1>
+          <p class="">Done as an assesment for Yoobee school of design
+            where we had to make a prototype ready mobile app for the Wellington City Council.
+            Overall this was an amazing way to learn teamwork and to make good use of everyones skills
+            and to create the final product as a group.</p>
+        </div>
+      </div>
 
       <div class="projectImgContainer2">
         <img src="media/wcLogin.png" alt="Wellington Canvas Login Page" class="projectImg3">
@@ -170,14 +188,32 @@
     <div class="overlay" id="overlay-cafeVilla">
       <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color:white;"><i class="fas fa-times"></i></a>
       <div class="projectContainer2">
-        <h1 class="projecth1">Cafe Villa</h1>
-        <h2 class="projecth2">Jason Climo, Ben Elwood</h2>
-        <h3 class="projecth3">Software Used: Adobe Illustrator, InVision, Photoshop</h3>
-  
-        <p class="projectDescription">Cafe Villa was a two month project done in 2019 for a cafe in Ngaio. The brief was to have a nice fully custom site for the client to be able to post job opertunitys as well as having a menu that could be updated and a feature called quote of the day which was a sort of bullitin board.</p>
-  
+        <div class="row">
+          <div class="col3">
+            <h1 class="projecth1">Cafe Villa</h1>
+            <h2 class="projecth2">Jason Climo, Ben Elwood</h2>
+            <a href="http://www.cafevilla.co.nz" target="_BLANK" class="button">Visit Website</a>
+          </div>
+
+          <div class="col3">
+            <h1>Tools & Technology used</h1>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Vinilla PHP</li>
+              <li>Javascript</li>
+              <li>XAMMP</li>
+              <li>Github</li>
+            </ul>
+          </div>
+
+          <div class="col3">
+            <h1>About</h1>
+            <p class="">Cafe Villa was a two month project done in 2019 for a cafe in Ngaio. The brief was to have a nice fully custom site for the client to be able to post job opertunitys as well as having a menu that could be updated and a feature called quote of the day which was a sort of bullitin board.</p>
+          </div>
+        </div>
+
         <div class="projectImgContainer2">
-          <a href="http://www.cafevilla.co.nz" target="_BLANK" class="button">Visit Website</a>
           <!-- <iframe src="cafevilla.co.nz" frameborder="0" width="90%" style="padding:5%" height="800px"></iframe> -->
         </div>
       </div>
@@ -187,12 +223,27 @@
       <div class="overlay" id="overlay-deliverance">
         <a @click="closeModal($event)" style="position:absolute; top:0; right:0; font-size:2em; padding: 2%; color:white;"><i class="fas fa-times"></i></a>
         <div class="projectContainer2">
-          <h1 class="projecth1">Jubatus Deliverance Ministry</h1>
-          <h2 class="projecth2">Jason Climo</h2>
-          <h3 class="projecth3">Tools Used: HTML, CSS, Koala (SCSS Compiler)</h3>
-    
-          <p class="projectDescription">This was an interesting as it was a project that needed to be done in 24 hours for a meeting this client was going to so in the end I needed to sacrifice backend php with formsubmit.io and a good chunk of fancy design elements.</p>
-    
+          <div class="row">
+            <div class="col3">
+              <h1 class="projecth1">Jubatus Deliverance Ministry</h1>
+              <h2 class="projecth2">Jason Climo</h2>
+            </div>
+
+            <div class="col3">
+              <h1>Tools & Technology used</h1>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Koala SCSS Compiler</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+
+            <div class="col3">
+              <p class="projectDescription">This was an interesting as it was a project that needed to be done in 24 hours for a meeting this client was going to so in the end I needed to sacrifice backend php with formsubmit.io and a good chunk of fancy design elements.</p>
+            </div>
+          </div>
+
           <div class="projectImgContainer2">
             <a href="https://jubatusdeliverance.co.nz/" target="_BLANK" class="button">Visit Website</a>
             <iframe src="https://jubatusdeliverance.co.nz/" frameborder="0" width="90%" style="padding:5%" height="800px"></iframe>
@@ -213,8 +264,15 @@
             </div>
 
             <div class="col3">
-              <h1>Tools used</h1>
-              <h3>HTML, CSS, Koala (SCSS Compiler), Wordpress</h3>
+              <h1>Tools & Technology used</h1>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Koala SCSS Compiler</li>
+                <li>PHP</li>
+                <li>Wordpress</li>
+                <li>Javascript</li>
+              </ul>
             </div>
 
             <div class="col3">
@@ -231,13 +289,40 @@
       </div>
 
 
-  <!--Footer-->
-  <div class="footer">
-    <h4 class="footerh4">Copyright: Climo Studios {{ currentYear }} &copy;</h4>
-    <div class="footerLinks">
-      <a href="https://www.instagram.com/climo_studios/?hl=en" target="_blank"><img src="icons/instagram.png" alt="The logo of instagram" title="Link to instagram" class="footerImg"></a>
+    <!--Footer-->
+    <div class="footer">
+      <div class="row">
+        <div class="col3 sitemap">
+          <h3>Sitemap</h2>
+          <a href="index.html">Home</a> <br>
+          <a href="portfolio.html">Portfolio</a> <br>
+          <a href="shop.html">Shop</a> <br>
+          <a href="contact.html">Contact</a>
+        </div>
+  
+        <div class="col3">
+          <h3>Explore</h2>
+          <!-- Github -->
+          <a href="https://github.com/clasomato" target="_blank" class="social-footer" style="text-decoration: none;">
+            <i class="fab fa-github"></i>
+          </a>
+  
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/climo_studios/?hl=en" target="_blank" class="social-footer" style="text-decoration: none;">
+            <i class="fab fa-instagram"></i>
+          </a>
+  
+          <!--Linked in-->
+          <a href="https://www.linkedin.com/in/jason-climo-096160201/" target="_blank" class="social-footer" style="text-decoration: none;">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+  
+        <div class="col3">
+          <h5>Copyright: Climo Studios 2020 &copy;</h5>
+        </div>
+      </div>
     </div>
-  </div>
 
   <!-- Ends App  -->
   </div>
