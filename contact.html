@@ -43,42 +43,80 @@
 
   
 
-	<script>
-		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-		function myFunction() {
-  			var x = document.getElementById("myTopnav");
-  		if (x.className === "topnav") {
-    		x.className += " responsive";
-  		} else {
-    	x.className = "topnav";
-  		}
-		}
-	</script>
 
-<div class="contactText">
-  <h1 class="contacth1">Contact Details</h1>
-  <h2 class="contacth2"><span class="contactPoint">Email:</span> jason@climostudios.online</h2>
-  <h2 class="contacth2"><span class="contactPoint">Phone Number:</span> 04-4793829</h2>
-  <h2 class="contacth2">Message us on facebook!</h2>
-  <p class="contactP">We typically respond in less than half a day althoug depending on when
-  you email or message it may take a while longer.</p>
-
-  <br>
-  <div class="contactForm">
-    <form action="https://formsubmit.io/send/a0ca365b-9244-4558-83b0-0ac1d70f501a" method="POST" />
-    <input type="text" name="name" id="" placeholder="Name"> <br>
-    <input type="text" name="number" id="" placeholder="Phone Number"> <br>
-    <input type="text" name="email" placeholder="Email"> <br>
-    <textarea name="details" id="" cols="30" rows="10" placeholder="Message"></textarea> <br>
-    <input type="submit" value="Submit" class="contact-button">
-  </form>
+<div class="container-contact">
+  <div class="contactText">
+    <h1>Contact us!</h1>
+    <h3>Email <br> jason@climostudios.co.nz</h3>
+    <h3>Phone <br> 022 175 7810</h3>
+  
+    <br>
+    <div class="contactForm">
+      <form action="https://formsubmit.io/send/a0ca365b-9244-4558-83b0-0ac1d70f501a" method="POST" />
+      <input type="text" name="name" id="" placeholder="Name"> <br>
+      <input type="text" name="number" id="" placeholder="Phone Number"> <br>
+      <input type="text" name="email" placeholder="Email"> <br>
+      <textarea name="details" id="" cols="30" rows="10" placeholder="Message"></textarea> <br>
+      <input type="submit" value="Submit" class="contact-button">
+    </form>
+    </div>
   </div>
+</div>
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="row">
+        <div class="col3 sitemap">
+          <h3>Sitemap</h2>
+          <a href="index.html">Home</a> <br>
+          <a href="portfolio.html">Portfolio</a> <br>
+          <a href="shop.html">Shop</a> <br>
+          <a href="contact.html">Contact</a>
+        </div>
+  
+        <div class="col3">
+          <h3>Explore</h2>
+          <!-- Github -->
+          <a href="https://github.com/clasomato" target="_blank" class="social-footer" style="text-decoration: none;">
+            <i class="fab fa-github"></i>
+          </a>
+  
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/climo_studios/?hl=en" target="_blank" class="social-footer" style="text-decoration: none;">
+            <i class="fab fa-instagram"></i>
+          </a>
+  
+          <!--Linked in-->
+          <a href="https://www.linkedin.com/in/jason-climo-096160201/" target="_blank" class="social-footer" style="text-decoration: none;">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+  
+        <div class="col3">
+          <h5>Copyright: Climo Studios 2020 &copy;</h5>
+          <p>Email <br> jason@climostudios.co.nz</p>
+          <p>Phone <br> 022 175 7810</p>
+        </div>
+      </div>
+    </div>
 
 
 
 
 
 </body>
+
+<script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+    x.className = "topnav";
+    }
+  }
+</script>
 <!--Footer
 <div class="footer">
   <h4 class="footerh4">Copyright: Climo Studios 2019 &copy;</h4>

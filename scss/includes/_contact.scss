@@ -73,7 +73,7 @@ input[type=button], input[type=submit], input[type=reset] {
   padding-right: 10%;
   padding-top: 3%;
   color: #e8e8e8;
-  background-color: #701334;
+
   height: 100vh;
   padding-bottom: 10%;
   text-align: center;
@@ -88,21 +88,9 @@ input[type=button], input[type=submit], input[type=reset] {
   /* padding-left: 10%; */
 }
 
-.contacth2 {
-  /* line-height: 0.8em; */
-  /* margin-left: 1%; */
-  /* padding-left: 5%; */
-}
-
 .contactPoint {
   color: #c9c9c9;
   font-size: 90%;
-}s
-
-.contactP {
-  /* width: 60%; */
-  /* margin-left: 1%; */
-  /* padding-left: 5%; */
 }
 
 .field {
@@ -112,6 +100,11 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .contactForm {
   text-align: center;
+}
+
+.container-contact {
+  padding: 5% 10%;
+  background-color: #701334;
 }
 
 @media only screen and (max-width: 600px) {

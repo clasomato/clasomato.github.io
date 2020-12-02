@@ -64,7 +64,6 @@ input[type=button], input[type=submit], input[type=reset] {
   padding-right: 10%;
   padding-top: 3%;
   color: #e8e8e8;
-  background-color: #701334;
   height: 100vh;
   padding-bottom: 10%;
   text-align: center;
@@ -77,20 +76,9 @@ input[type=button], input[type=submit], input[type=reset] {
   /* margin-bottom: -1%; */
   /* padding-left: 10%; */ }
 
-.contacth2 {
-  /* line-height: 0.8em; */
-  /* margin-left: 1%; */
-  /* padding-left: 5%; */ }
-
 .contactPoint {
   color: #c9c9c9;
   font-size: 90%; }
-
-s
-.contactP {
-  /* width: 60%; */
-  /* margin-left: 1%; */
-  /* padding-left: 5%; */ }
 
 .field {
   text-align: center;
@@ -98,6 +86,10 @@ s
 
 .contactForm {
   text-align: center; }
+
+.container-contact {
+  padding: 5% 10%;
+  background-color: #701334; }
 
 @media only screen and (max-width: 600px) {
   .contactText {
@@ -129,7 +121,7 @@ s
 .portImg2 {
   width: 30%;
   display: inline;
-  border-radius: 2%;
+  border-radius: 0.25em;
   margin-bottom: 2%;
   margin-right: 2%;
   box-shadow: 4px 10px 16px 1px rgba(33, 33, 33, 0.09);
@@ -580,7 +572,7 @@ s
 #myBtn {
   background-color: #c21954;
   border: none;
-  border-radius: 1%;
+  border-radius: 0.25em;
   color: white;
   padding: 10px 18px;
   text-align: center;
@@ -650,7 +642,7 @@ h5 {
 .projectImg3 {
   /* background-color: #701334; */
   width: 36%;
-  border-radius: 2%;
+  border-radius: 0.25em;
   margin-left: 9%;
   margin-bottom: 1%;
   margin-top: 5%;
