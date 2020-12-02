@@ -15,13 +15,6 @@
     color: #eee;
 }
 
-@media only screen and (max-width: 600px) {
-  .porth2 {
-    width: 80%;
-    margin-left: 7%;
-  }
-}
-
 .portImg2 {
   width: 30%;
   display: inline;
@@ -94,29 +87,6 @@
   // padding-right: 5%;
 }
 
-@-webkit-keyframes scale-up-center {
-0% {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-}
-100% {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-}
-@keyframes scale-up-center {
-0% {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-}
-100% {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-}
-/**PORTFOLIO ENDS**/
-
-
 @media only screen and (max-width: 600px) {
   .portImg2 {
     width: 80%;
@@ -124,3 +94,32 @@
     margin-left: 7%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .porth2 {
+    width: 80%;
+    margin-left: 7%;
+  }
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  }
+  @keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  }

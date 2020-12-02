@@ -129,21 +129,6 @@ h5 {
   // margin-left: 10%;
 }
 
-@media only screen and (max-width: 600px) {
-  .projecth2, .projecth3 {
-    width: 80%;
-    line-height: 1.4em;
-  }
-
-  .projecth1, .projecth2, .projecth3 {
-    margin: 0%;
-  }
-
-  .button {
-    margin: 5% 0% !important;
-    display: inline-block;
-  }
-}
 
 .projectContainer2 {
   /* background-color: #317d91; */
@@ -161,14 +146,6 @@ h5 {
   box-shadow: 4px 10px 16px 1px rgba(33,33,33,.09);
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-@media only screen and (max-width: 600px) {
-  .projectImg3 {
-    width: 80%;
-    margin-bottom: 5%;
-    margin-left: 10%;
-  }
 }
 
 .projectImgContainer2 {
@@ -206,9 +183,26 @@ h5 {
   }
 }
 
-/**PROJECTS UNIVERSAL CODE ENDS**/
+@media only screen and (max-width: 600px) {
+  .projecth2, .projecth3 {
+    width: 80%;
+    line-height: 1.4em;
+  }
 
+  .projecth1, .projecth2, .projecth3 {
+    margin: 0%;
+  }
 
+  .button {
+    margin: 5% 0% !important;
+    display: inline-block;
+  }
+}
 
-
-
+@media only screen and (max-width: 600px) {
+  .projectImg3 {
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+  }
+}

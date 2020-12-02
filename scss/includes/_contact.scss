@@ -43,29 +43,6 @@ input[type=button], input[type=submit], input[type=reset] {
   font-size: 1.25em;
 }
 
-@media only screen and (max-width: 600px) /**Mobile Optimization**/ {
-  .contactForm {
-    width: 100%;
-    margin-left: 0%;
-    background-color: #701334;
-    padding-top: 5%;
-    /* padding-bottom: 100%; */
-  }
-  input[type=button], input[type=submit], input[type=reset] {
-    background-color: #701334;
-  }
-  input[type=text], textarea {
-    width: 90%;
-  }
-  input[type=button] {
-    background-color: #317d91 !important;
-  }
-  .contact-button {
-    background-color: #317d91;
-    border-radius: 0.5em !important;
-  }
-}
-
 .contactText {
   /*padding: 5%;*/
   /* float: left; */
@@ -117,5 +94,28 @@ input[type=button], input[type=submit], input[type=reset] {
 
   .contactP {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) /**Mobile Optimization**/ {
+  .contactForm {
+    width: 100%;
+    margin-left: 0%;
+    background-color: #701334;
+    padding-top: 5%;
+    /* padding-bottom: 100%; */
+  }
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #701334;
+  }
+  input[type=text], textarea {
+    width: 90%;
+  }
+  input[type=button] {
+    background-color: #317d91 !important;
+  }
+  .contact-button {
+    background-color: #317d91;
+    border-radius: 0.5em !important;
   }
 }

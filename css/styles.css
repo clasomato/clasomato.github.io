@@ -37,26 +37,6 @@ input[type=button], input[type=submit], input[type=reset] {
   /* border-radius: 5%; */
   font-size: 1.25em; }
 
-@media only screen and (max-width: 600px) {
-  .contactForm {
-    width: 100%;
-    margin-left: 0%;
-    background-color: #701334;
-    padding-top: 5%;
-    /* padding-bottom: 100%; */ }
-
-  input[type=button], input[type=submit], input[type=reset] {
-    background-color: #701334; }
-
-  input[type=text], textarea {
-    width: 90%; }
-
-  input[type=button] {
-    background-color: #317d91 !important; }
-
-  .contact-button {
-    background-color: #317d91;
-    border-radius: 0.5em !important; } }
 .contactText {
   /*padding: 5%;*/
   /* float: left; */
@@ -100,6 +80,26 @@ input[type=button], input[type=submit], input[type=reset] {
 
   .contactP {
     width: 90%; } }
+@media only screen and (max-width: 600px) {
+  .contactForm {
+    width: 100%;
+    margin-left: 0%;
+    background-color: #701334;
+    padding-top: 5%;
+    /* padding-bottom: 100%; */ }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #701334; }
+
+  input[type=text], textarea {
+    width: 90%; }
+
+  input[type=button] {
+    background-color: #317d91 !important; }
+
+  .contact-button {
+    background-color: #317d91;
+    border-radius: 0.5em !important; } }
 .button {
   text-decoration: none;
   color: white;
@@ -114,10 +114,6 @@ input[type=button], input[type=submit], input[type=reset] {
   font-size: 3em;
   color: #eee; }
 
-@media only screen and (max-width: 600px) {
-  .porth2 {
-    width: 80%;
-    margin-left: 7%; } }
 .portImg2 {
   width: 30%;
   display: inline;
@@ -183,6 +179,15 @@ input[type=button], input[type=submit], input[type=reset] {
   /* Specify a stack order in case you're using a different order for other elements */
   overflow: auto; }
 
+@media only screen and (max-width: 600px) {
+  .portImg2 {
+    width: 80%;
+    margin-bottom: 11%;
+    margin-left: 7%; } }
+@media only screen and (max-width: 600px) {
+  .porth2 {
+    width: 80%;
+    margin-left: 7%; } }
 @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
@@ -197,12 +202,6 @@ input[type=button], input[type=submit], input[type=reset] {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
-/**PORTFOLIO ENDS**/
-@media only screen and (max-width: 600px) {
-  .portImg2 {
-    width: 80%;
-    margin-bottom: 11%;
-    margin-left: 7%; } }
 .outer-container {
   width: 100%;
   display: flex;
@@ -623,17 +622,6 @@ h5 {
 .projecth3 {
   color: white; }
 
-@media only screen and (max-width: 600px) {
-  .projecth2, .projecth3 {
-    width: 80%;
-    line-height: 1.4em; }
-
-  .projecth1, .projecth2, .projecth3 {
-    margin: 0%; }
-
-  .button {
-    margin: 5% 0% !important;
-    display: inline-block; } }
 .projectContainer2 {
   /* background-color: #317d91; */
   padding-top: 1%;
@@ -650,11 +638,6 @@ h5 {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
 
-@media only screen and (max-width: 600px) {
-  .projectImg3 {
-    width: 80%;
-    margin-bottom: 5%;
-    margin-left: 10%; } }
 .projectImgContainer2 {
   /* background-color: #701334; */
   width: 100%; }
@@ -680,6 +663,21 @@ h5 {
 
   .col3 {
     width: 100%; } }
-/**PROJECTS UNIVERSAL CODE ENDS**/
+@media only screen and (max-width: 600px) {
+  .projecth2, .projecth3 {
+    width: 80%;
+    line-height: 1.4em; }
+
+  .projecth1, .projecth2, .projecth3 {
+    margin: 0%; }
+
+  .button {
+    margin: 5% 0% !important;
+    display: inline-block; } }
+@media only screen and (max-width: 600px) {
+  .projectImg3 {
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: 10%; } }
 
 /*# sourceMappingURL=styles.css.map */
