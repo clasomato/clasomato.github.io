@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: climostudios.co.nz
+Token: e4b1def437718fa6a34b3c95fcb17f5dfc39e42887ecc66e18bac7abc82756bd
