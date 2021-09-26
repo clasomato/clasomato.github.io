@@ -523,6 +523,47 @@ input[type=button], input[type=submit], input[type=reset] {
     display: block;
     text-align: left; } }
 /**NAvigation ENDS**/
+.splash-container {
+  padding: 10% 15%;
+  background-color: #701334;
+  color: white;
+  background-image: url("../media/splash-background.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.container {
+  padding: 5% 10%; }
+
+.post {
+  padding: 2.5% 5%;
+  box-shadow: 3px 2px 32px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 2px 32px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 3px 2px 32px 0px rgba(0, 0, 0, 0.1); }
+
+.header-tag {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 26px !important;
+  letter-spacing: 3.33px; }
+
+h1 {
+  padding: 0%;
+  margin: 0%;
+  font-size: 75px !important; }
+
+.post-title, .post-author {
+  padding-bottom: 0% !important;
+  margin-bottom: 0% !important;
+  padding-top: 5px !important;
+  margin-top: 0% !important; }
+
+.post-date {
+  padding-top: 5px !important;
+  margin-top: 0% !important; }
+
 /**Testing Area**/
 /* The Modal (background) */
 .modal {
